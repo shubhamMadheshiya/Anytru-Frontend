@@ -4,7 +4,7 @@ import Logo from "../assets/AnyTru.png";
 
 const Home = () => {
   const token =
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTM4YjUzZTY5MDgxOTc5ZTVhMWUxYiIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzI1MzUxMDk3LCJleHAiOjE3Mjc5NDMwOTd9.N5xUGX09-phZoR3rctY5gHXCLfUbM0ghG8oA_Be4DQ8";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZDgyYzcwNzdmMzJjZjJkMzViODE4NSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzI1NDUwNjc0LCJleHAiOjE3MjgwNDI2NzR9.AnKnD5JW0kCh2IyK4jJh-GQ2QLiWD6oi8UWPKewN7nQ";
   const checkoutHandler = async (amount) => {
     try {
       // await axios.get("http://localhost:5000/api/getkey", {
@@ -14,11 +14,11 @@ const Home = () => {
       // });
 
       const { data } = await axios.post(
-        "http://localhost:5000/order/checkoutSingle",
+        "http://localhost:5000/order/checkoutSingle?deliveryType=Standard",
         {
-          productId: "669392924acf601ac523fe47",
-          offerId: "6693a317de48b53e801cd0d3",
-          addressId: "66940d55a63b6ad12a546407",
+          productId: "66d84b6577f32cf2d35b81d7",
+          offerId: "66d850ac77f32cf2d35b8228",
+          addressId: "66d8c055d5e3ebb10b70a86d",
           quantity: 4,
         },
         {
